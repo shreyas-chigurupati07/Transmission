@@ -1,0 +1,108 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+
+WorldInfo {
+  gravity 0
+  contactProperties [
+    ContactProperties {
+      coulombFriction [
+        0
+      ]
+      bounce 0
+      bounceVelocity 1000
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.19299371699261392 0.11920253530214618 -0.9739323286445087 2.0584770757951754
+  position 5.33145305676912 10.664114864268523 5.6546115036995035
+}
+DirectionalLight {
+  direction 0 -1 0
+}
+DEF case Solid {
+  scale 0.01 0.01 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.1 0.1 0.1
+          transparency 0.6
+        }
+      }
+      geometry Mesh {
+        url [
+          "../../Case.stl"
+        ]
+      }
+    }
+  ]
+  name "case"
+  boundingObject Mesh {
+    url [
+      "../../Case.stl"
+    ]
+  }
+}
+DEF primaryshaft Solid {
+  translation -0.889991 0 2.28
+  rotation 0 1 0 1.5708
+  scale 0.01 0.01 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Mesh {
+        url [
+          "../../primary_shaft.stl"
+        ]
+      }
+    }
+  ]
+  name "primaryshaft"
+  boundingObject Mesh {
+    url [
+      "../../primary_shaft.stl"
+    ]
+  }
+  physics Physics {
+    density 10000000
+  }
+}
+DEF secondaryshaft Solid {
+  translation 1.6 0 1.11
+  rotation 0 1 0 -1.5707953071795862
+  scale 0.01 0.01 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Mesh {
+        url [
+          "../../secondary_shaft.stl"
+        ]
+      }
+    }
+  ]
+  name "secondaryshaft"
+  boundingObject Mesh {
+    url [
+      "../../secondary_shaft.stl"
+    ]
+  }
+}
+TexturedBackground {
+}
+DEF super Robot {
+  name "super"
+  controller "supervisor_controller"
+  supervisor TRUE
+}
+DirectionalLight {
+  direction -1 1 0
+}
