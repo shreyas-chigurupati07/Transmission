@@ -23,9 +23,11 @@ Design a motion planner that guides the mainshaft of a transmission out of its c
 
 ## Results
 
-
+### Annimation:
 https://github.com/shreyas-chigurupati07/Transmission/assets/84034817/45e68c87-19eb-4a3e-9884-5871504256c4
 
+### Plot:
+[RRT Figure-1.pdf](https://github.com/shreyas-chigurupati07/Transmission/files/14547110/RRT.Figure-1.pdf)
 
 ## Dependencies
 
