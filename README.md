@@ -22,12 +22,13 @@ Design a motion planner that guides the mainshaft of a transmission out of its c
 3. Press Ctrl+4 if "No Rendering" appears, then start the simulation with the play button.
 
 ## Results
+![Screenshot 2024-03-09 at 11 43 57 AM](https://github.com/shreyas-chigurupati07/Transmission/assets/84034817/7664dca4-e1be-4821-9b49-d4812343aaec)
 
 ### Annimation:
 https://github.com/shreyas-chigurupati07/Transmission/assets/84034817/45e68c87-19eb-4a3e-9884-5871504256c4
 
 ### Plot:
-[RRT Figure-1.pdf](https://github.com/shreyas-chigurupati07/Transmission/files/14547110/RRT.Figure-1.pdf)
+
 
 ## Dependencies
 
